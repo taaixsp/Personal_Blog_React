@@ -2,7 +2,7 @@ import React from "react";
 import {AppBar, Toolbar, Typography, Box} from '@material-ui/core';
 
 function Navbar(){
-    return(
+    return(<>
         <AppBar position="static">
         <Toolbar variant="dense">
             <Box style={{ cursor: "pointer" }} >
@@ -41,6 +41,7 @@ function Navbar(){
 
         </Toolbar>
     </AppBar>
+    </>
     )
 }
 
