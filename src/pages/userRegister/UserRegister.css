@@ -1,12 +1,4 @@
-.text1{
-    font-weight: bold;
-}
-
-.text-decorator-none{
-    text-decoration: none;
-}
-
-.image{
+.image2{
     background-image: url(https://i.imgur.com/V7qeP3F.jpg);
     background-repeat: no-repeat;
     width: 100vh;
@@ -15,8 +7,10 @@
     background-position: center;
 }
 
-.button{
-    background-color: #630014 !important;
-    color: white !important;
+.text2{
+    font-weight: bold !important;
+}
 
+.btnCancelar{
+    margin-right: 20px !important;
 }

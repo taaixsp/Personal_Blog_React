@@ -5,7 +5,7 @@ import './Navbar.css';
 
 function Navbar(){
     return(<>
-        <AppBar position="static">
+        <AppBar position="static" className='menu font'>
         <Toolbar variant="dense">
             <Box style={{ cursor: "pointer" }} >
                 <Typography variant="h5" color="inherit">
