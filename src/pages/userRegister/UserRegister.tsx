@@ -4,6 +4,7 @@ import {Link, useNavigate} from 'react-router-dom';
 import './UserRegister.css';
 import User from '../../models/User';
 import { userRegister } from '../../services/Services';
+import {toast} from 'react-toastify';
 
 function UserRegister(){
 
@@ -51,9 +52,29 @@ function UserRegister(){
         e.preventDefault()
         if(confirmarSenha == user.password){
         userRegister(`/usuarios/cadastrar`, user, setUserResult)
-        alert('Usuario cadastrado com sucesso')
+        toast.error('Usuário cadastrado com sucesso!', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        })
+        
         }else{
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
+            
+            toast.error('Dados inconsistentes. Favor verificar as informações de cadastro.', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            })
         }
     }
 
